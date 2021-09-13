@@ -260,19 +260,34 @@ body {
   margin-bottom: 10px;
 }
 
-@media(min-width: 769px) {
+@media (max-width: 700px) {
 
-  .container {
-    width: 85%;
+  .cabecalhoPrincipal .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    text-align: center;
+    width: 90%;
   }
 
   .subtitulo {
     text-align: left;
   }
 
+  .cabecalhoPrincipal-titulo {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+
+  .cabecalhoPrincipal-nav {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
   .cabecalhoPrincipal-nav-link {
     border-radius: 5px;
-    border: 1px solid #9799A6;
   }
 
   .cabecalhoPrincipal-nav-link:hover {
@@ -280,17 +295,8 @@ body {
     background-color: #9799A6;
   }
 
-  .cabecalhoPrincipal-titulo {
-    margin: 0;
-  }
-
-  .cabecalhoPrincipal-nav {
-    width: auto;
-  }
-
   .cabecalhoPrincipal-nav-link {
     width: auto;
-    margin: 0 0 0 10px;
   }
 
   .rodapePrincipal-contatoForm {
@@ -300,25 +306,53 @@ body {
 
   .conteudoPrincipal-cursos {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
   }
 
   .conteudoPrincipal-cursos-link {
-    width: 23%;
+    width: 100%;
   }
 
-  .conteudoPrincipal-cursos-link:nth-child(4n) {
-    margin-right: 0;
+  .rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: initial;
+    height: auto;
   }
 
-  .conteudoPrincipal-cursos-link:nth-child(4n+1) {
-    margin-left: 0;
+  .rodapePrincipal-patrocinadores .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around align-items: center;
+    width: 100%;
+    margin: 0 0 20px 0;
+
+  }
+
+  .rodapePrincipal-contatoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
 }
 
-@media(min-width: 1000px) {
+/* @media (min-width: 0px) {
+
+  .cabecalhoPrincipal .container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+
   .conteudoPrincipal-cursos-link {
     margin: 1.333%;
   }
@@ -343,4 +377,4 @@ body {
     margin-left: 1.5em;
   }
 
-}
+} */
