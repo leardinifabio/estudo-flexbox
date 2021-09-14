@@ -251,7 +251,7 @@ body {
 .videoSobre .container {
   color: #FFF;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .videoSobre-sobre-title {
@@ -264,6 +264,15 @@ body {
   line-height: 2;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.videoSobre-sobre-list {
+  flex-grow: 1;
+}
+
+.videoSobre-video {
+  margin-right: 3%;
 }
 
 .videoSobre-button {
