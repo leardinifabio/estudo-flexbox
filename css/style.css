@@ -252,6 +252,7 @@ body {
   color: #FFF;
   display: flex;
   justify-content: center;
+  max-width: 1400px;
 }
 
 .videoSobre-sobre-title {
@@ -265,6 +266,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  flex-grow: 5;
 }
 
 .videoSobre-sobre-list {
@@ -272,6 +274,7 @@ body {
 }
 
 .videoSobre-video {
+  flex-grow: 1;
   margin-right: 3%;
 }
 
