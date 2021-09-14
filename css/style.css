@@ -51,6 +51,14 @@ body {
   margin-bottom: 20px;
 }
 
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
 .subtitulo {
   font-weight: bold;
   font-size: 32px;
@@ -66,6 +74,15 @@ body {
   transition: .3s;
   box-shadow: 2px 2px 2px #CCC;
   position: relative;
+  width: 23.5%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+  margin-left: 0;
 }
 
 .conteudoPrincipal-cursos-link a {
